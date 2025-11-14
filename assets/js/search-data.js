@@ -9,23 +9,23 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-publications",
-          title: "Publications",
-          description: "(*) denotes equal contribution",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/publications/";
-          },
-        },{id: "nav-cv",
+  },{id: "nav-cv",
           title: "CV",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-self-attention-amortized-distributional-projection-optimization-for-sliced-wasserstein-point-cloud-reconstruction",
+        },{id: "nav-projects",
+          title: "projects",
+          description: "A growing collection of your cool projects.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "post-sadsw",
       
-        title: "Self-Attention Amortized Distributional Projection Optimization for Sliced Wasserstein Point-Cloud Reconstruction",
+        title: "Sadsw",
       
       description: "",
       section: "Posts",
@@ -34,9 +34,9 @@ ninja.data = [{
           window.location.href = "/blog/2023/SADSW/";
         
       },
-    },{id: "post-improving-mini-batch-optimal-transport-via-partial-transportation",
+    },{id: "post-mpot",
       
-        title: "Improving Mini-batch Optimal Transport via Partial Transportation",
+        title: "Mpot",
       
       description: "",
       section: "Posts",
@@ -45,9 +45,9 @@ ninja.data = [{
           window.location.href = "/blog/2022/mPOT/";
         
       },
-    },{id: "post-on-transportation-of-mini-batches-a-hierarchical-approach",
+    },{id: "post-bombot",
       
-        title: "On Transportation of Mini-batches: A Hierarchical Approach",
+        title: "Bombot",
       
       description: "",
       section: "Posts",
@@ -103,35 +103,28 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%6E%67%75%79%65%6E%74%75%61%6E%68%61%69%64%61%6E%67@%67%6D%61%69%6C.%63%6F%6D", "_blank");
+          window.open("mailto:%67%73%67%72%65%63%68%6B%69%6E@%67%6D%61%69%6C.%63%6F%6D", "_blank");
         },
       },{
         id: 'social-github',
         title: 'GitHub',
         section: 'Socials',
         handler: () => {
-          window.open("https://github.com/hsgser", "_blank");
+          window.open("https://github.com/grgrie", "_blank");
+        },
+      },{
+        id: 'social-leetcode',
+        title: 'LeetCode',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://leetcode.com/u/GrGrie/", "_blank");
         },
       },{
         id: 'social-linkedin',
         title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.linkedin.com/in/dang-nguyen-50b7a7a0", "_blank");
-        },
-      },{
-        id: 'social-scholar',
-        title: 'Google Scholar',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://scholar.google.com/citations?user=WIqAtrcAAAAJ", "_blank");
-        },
-      },{
-        id: 'social-x',
-        title: 'X',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://twitter.com/dangnth97", "_blank");
+          window.open("https://www.linkedin.com/in/grigory-grechkin", "_blank");
         },
       },{
       id: 'light-theme',
