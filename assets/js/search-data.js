@@ -39,7 +39,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-grgrie-preis",
           title: 'GrGrie_Preis',
-          description: "Discounter website scraper, classifier and price tracker",
+          description: "Discounter website scraper, classifier and price tracker. Automates the extraction of product prices from weekly flyers of German discount supermarkets and sends the data via Telegram Bot",
           section: "Projects",handler: () => {
               window.location.href = "/projects/GrGrie_Preis/";
             },},{
