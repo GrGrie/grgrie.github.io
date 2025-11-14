@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-# subtitle: CS Ph.D. Student at UCLA
+subtitle: Research Assistant in Machine Learning, ML Engineer, M.Sc. student at RPTU Kaiserslautern-Landau
 
 profile:
   align: right
@@ -19,6 +19,8 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi, I'm a CS Ph.D. candidate at UCLA under the supervision of Professor <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>. My research focuses on improving data quality to enhance the performance and efficiency of large (vision-)language models. Specifically, I work on **synthetic data generation** and **data selection** to optimize training, making these models more effective and accessible. More recently, I have also become interested in advancing **reasoning** via **test-time scaling** and **RL training**. 
+Hi, I'm a M.Sc. student at RPTU Kaiserslautern-Landau and a research assistant under the supervision of (Naghmeh Ghanooni)[https://ml.cs.rptu.de/people/naghmeh-ghanooni.php]. My research centers on improving the performance and robustness of computer vision models through data-centric methods. I work on synthetic data generation, data selection, and feature-space analysis to strengthen model generalization, especially under **spurious correlations**.
 
-Before joining UCLA, I was an AI Resident at <a href="https://www.vinai.io/">VinAI</a> (now Qualcomm AI). Prior to that, I received my BS degree, summa cum laude, from Toyo University. Going further back in time, I was a graduate of High School for Gifted Students (Hanoi University of Science) and a Maths Olympian (**IMO 2015 Silver**).
+My practical work includes training and evaluating large-scale self-supervised and contrastive learning models, integrating new datasets into custom pipelines, and designing reproducible multi-run experiments. Recently, I have also become interested in enhancing model reasoning via test-time scaling and reinforcement-learning-based approaches.
+
+Alongside my academic research, I have a strong foundation in software engineering and ML systems: from dataset curation and augmentation workflows to model deployment. I enjoy building reliable, scalable systems and exploring new SOTA techniques in machine learning.
