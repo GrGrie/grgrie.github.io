@@ -4,7 +4,7 @@ title: GrGrie_Preis
 description: Discounter website scraper, classifier and price tracker
 img: assets/img/german-discounters.png
 importance: 1
-category: work
+category: Personal
 related_publications: true
 ---
 
