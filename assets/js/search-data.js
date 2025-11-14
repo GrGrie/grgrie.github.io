@@ -18,42 +18,20 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "Projects",
-          description: "A list of my projects",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "post-sadsw",
+        },{id: "post-template",
       
-        title: "Sadsw",
-      
-      description: "",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2023/SADSW/";
-        
-      },
-    },{id: "post-mpot",
-      
-        title: "Mpot",
+        title: "Template",
       
       description: "",
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2022/mPOT/";
-        
-      },
-    },{id: "post-bombot",
-      
-        title: "Bombot",
-      
-      description: "",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2022/BoMbOT/";
+          window.location.href = "/blog/2025/Template/";
         
       },
     },{id: "news-i-am-excited-to-announce-that-my-application-for-the-research-assistant-hiwi-position-at-rptu-kaiserslautern-landau-has-been-approved-i-look-forward-to-contributing-to-cutting-edge-research-in-machine-learning-and-computer-vision-under-the-guidance-of-naghmeh-ghanooni-stay-tuned-for-updates-on-my-research-projects-and-findings",
