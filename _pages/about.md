@@ -19,8 +19,6 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi, I'm a M.Sc. student at RPTU Kaiserslautern-Landau and a research assistant under the supervision of [Naghmeh Ghanooni](https://ml.cs.rptu.de/people/naghmeh-ghanooni.php). My research centers on improving the performance and robustness of computer vision models through data-centric methods. I work on synthetic data generation, data selection, and feature-space analysis to strengthen model generalization, especially under **spurious correlations**.
+Hi, I'm a M.Sc. student at RPTU Kaiserslautern-Landau and a research assistant under the supervision of [Naghmeh Ghanooni](https://ml.cs.rptu.de/people/naghmeh-ghanooni.php). My work focuses on a variety of methods to improve computer vision robustness, covering synthetic data generation, data selection, feature-space analysis, and mitigating **spurious correlations**.
 
-My practical work includes training and evaluating large-scale self-supervised and contrastive learning models, integrating new datasets into custom pipelines, and designing reproducible multi-run experiments. Recently, I have also become interested in enhancing model reasoning via test-time scaling and reinforcement-learning-based approaches.
-
-Alongside my academic success, I have a strong foundation in software engineering and ML systems: from dataset curation and augmentation workflows to model deployment. I enjoy building reliable, scalable systems and exploring new SOTA techniques in machine learning.
+I train and evaluate large-scale self-supervised and contrastive models, integrate diverse datasets into custom pipelines, and design reproducible multi-run experiments. Beyond research, I bring solid software engineering and ML systems experience, from dataset curation and augmentation to building scalable, reliable training and deployment workflows.
