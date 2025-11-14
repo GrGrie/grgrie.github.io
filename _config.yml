@@ -3,22 +3,21 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Dang
+first_name: Grigory
 middle_name: ""
-last_name: Nguyen
-email: nguyentuanhaidang@gmail.com
+last_name: Grechkin
+email: gsgrechkin@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Dang Nguyen's homepage
+  Grigory Grechkin's homepage
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: 🇩​ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: GG # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://hsgser.github.io # the base hostname & protocol for your site
+url: https://grgrie.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -71,13 +70,13 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: hsgser # your GitHub user name
+github_username: grgrie # your GitHub user name
 gitlab_username: # your GitLab user name
-twitter_username: dangnth97 # your Twitter handle
+twitter_username:  # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: dang-nguyen-50b7a7a0 # your LinkedIn user name
-telegram_username: # your Telegram user name
-scholar_userid: WIqAtrcAAAAJ # your Google Scholar ID
+linkedin_username: grigory-grechkin # your LinkedIn user name
+telegram_username: GrGrie # your Telegram user name
+scholar_userid:  # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 orcid_id: # your ORCID ID
@@ -104,7 +103,7 @@ youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 discord_id: # your discord id (18-digit unique numerical identifier)
 
 contact_note: >
-  Sending an email to nguyentuanhaidang (at) gmail (dot) com is the best way to reach me.
+  Sending an email to gsgrechkin@gmail.com is the best way to reach me.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -143,7 +142,7 @@ related_blog_posts:
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out
 # the information below.
 giscus:
-  repo: hsgser/hsgser.github.io      # <your-github-user-name>/<your-github-repo-name>
+  repo: gsgrechkin/gsgrechkin.github.io      # <your-github-user-name>/<your-github-repo-name>
   repo_id: MDEwOlJlcG9zaXRvcnk2MDAyNDM2NQ==
   category: Comments             # name of the category under which discussions will be created
   category_id: DIC_kwDOA5PmLc4CTBt6
@@ -156,7 +155,7 @@ giscus:
   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: dangnth # put your disqus shortname
+disqus_shortname: # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
@@ -305,8 +304,8 @@ display_tags: ['optimal-transport', 'domain-adaptation', 'model-fusion', 'theory
 
 scholar:
 
-  last_name: [Nguyen]
-  first_name: [Dang]
+  last_name: [Grechkin]
+  first_name: [Grigory]
 
   style: apa
   locale: en
