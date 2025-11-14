@@ -1,4 +1,1 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://grgrie.github.io/sitemap.xml
+User-agent: * Disallow: Sitemap: https://grgrie.github.io/sitemap.xml
