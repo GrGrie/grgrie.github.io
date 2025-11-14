@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ICML 2022 result
-date: 2022-05-15 14:54:00+0700
+title: HiWi Position approved
+date: 2025-06-01 09:00:00+0100
 inline: true
 ---
 
-Two papers are accepted at ICML 2022.
+I am excited to announce that my application for the Research Assistant (HiWi) position at RPTU Kaiserslautern-Landau has been approved! I look forward to contributing to cutting-edge research in machine learning and computer vision under the guidance of  [Naghmeh Ghanooni](https://ml.cs.rptu.de/people/naghmeh-ghanooni.php). Stay tuned for updates on my research projects and findings!
