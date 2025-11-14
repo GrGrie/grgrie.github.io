@@ -7,10 +7,10 @@
 # bluesky_url: # your bluesky URL
 # dblp_url: # your DBLP profile url
 # discord_id: # your discord id (18-digit unique numerical identifier)
-email: nguyentuanhaidang@gmail.com # your email address
+email: gsgrechkin@gmail.com # your email address
 # facebook_id: # your facebook id
 # flickr_id: # your flickr id
-github_username: hsgser # your GitHub user name
+github_username: grgrie # your GitHub user name
 # gitlab_username: # your GitLab user name
 # ieee_id: # your ieeexplore.ieee.org/author/id
 # inspirehep_id: 1010907 # Inspire HEP author ID
@@ -19,8 +19,8 @@ github_username: hsgser # your GitHub user name
 # keybase_username: # your keybase user name
 # lastfm_id: # your lastfm id
 # lattes_id: # your ID on Lattes (Brazilian Lattes CV)
-# leetcode_id: # your LeetCode id
-linkedin_username: dang-nguyen-50b7a7a0 # your LinkedIn user name
+leetcode_id: GrGrie # your LeetCode id
+linkedin_username: grigory-grechkin # your LinkedIn user name
 # mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 # medium_username: # your Medium username
 # orcid_id: # your ORCID ID
@@ -30,7 +30,7 @@ linkedin_username: dang-nguyen-50b7a7a0 # your LinkedIn user name
 # quora_username: # your Quora username
 # research_gate_profile: # your profile on ResearchGate
 # rss_icon: true # set to true to show the RSS icon
-scholar_userid: WIqAtrcAAAAJ # your Google Scholar ID
+# scholar_userid:  # your Google Scholar ID
 # scopus_id: # your profile on Scopus
 # semanticscholar_id: # your Semantic Scholar ID
 # spotify_id: # your spotify id
@@ -42,7 +42,7 @@ scholar_userid: WIqAtrcAAAAJ # your Google Scholar ID
 # wikidata_id: # your wikidata id
 # wikipedia_id: # your wikipedia id (Case sensitive)
 # work_url: # work page URL
-x_username: dangnth97 # your X handle
+# x_username: # your X handle
 # youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 # zotero_username: # your zotero username
 # custom_social: # can be any name here other than the ones already defined above
