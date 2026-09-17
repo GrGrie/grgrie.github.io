@@ -23,9 +23,13 @@ const isActive = (href: string) => (href === "/" ? path === "/" : path.startsWit
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
   </head>
   <body>
-    <header class="wrap header">
+    <header class="header">
+      <div class="wrap header-inner">
       <a class="brand" href="/">{site.name}</a>
       <nav>
         {site.nav.map((item) => (
@@ -33,13 +37,22 @@ const isActive = (href: string) => (href === "/" ? path === "/" : path.startsWit
         ))}
         <a class="signin" href={site.signInUrl} rel="nofollow">Sign in</a>
       </nav>
+      </div>
     </header>
     <main class="wrap">
       <slot />
     </main>
     <footer class="wrap footer">
       {site.links.map((l) => <a href={l.href}>{l.label}</a>)}
-      <span>© {new Date().getFullYear()} {site.name}</span>
+      <span class="copy">© {new Date().getFullYear()} {site.name}</span>
     </footer>
+    <script>
+      // A hairline appears under the bar only once content has scrolled beneath
+      // it (HIG: Layout › Visual hierarchy — a scroll edge effect, not a border).
+      const header = document.querySelector(".header");
+      const onScroll = () => header.toggleAttribute("data-scrolled", window.scrollY > 4);
+      onScroll();
+      addEventListener("scroll", onScroll, { passive: true });
+    </script>
   </body>
 </html>

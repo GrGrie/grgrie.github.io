@@ -2,8 +2,8 @@
 export const site = {
   name: "Grigory Grechkin",
   description: "Grigory Grechkin — ML engineer and research assistant in computer vision.",
-  // The "Sign in" button. home.grgrie.com sits behind TinyAuth, so a visitor
-  // without a session lands on its sign-in page and comes back afterwards.
+  // The "Sign in" button. The target is behind its own sign-in, so a visitor
+  // without a session lands on that page and comes back afterwards.
   signInUrl: "https://home.grgrie.com",
   nav: [
     { href: "/", label: "About" },

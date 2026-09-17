@@ -61,11 +61,8 @@ graph seed and four student seeds, and the selected concept groups all turned ou
 to be single concepts, so multi-concept grouping is unproven. Larger datasets and
 more training runs are the next step.
 
-## Earlier work
+## Earlier experiments
 
-- **Sparse concept embeddings and robustness** — experiments on whether SpLiCE-style
-  sparse linear concept embeddings help with robustness to spurious features; the
-  groundwork for CoSpRo.
 - **KAN vs. MLP projection heads** ([repository](https://github.com/GrGrie/kan-vs-mlp)) —
   a controlled comparison of a Kolmogorov–Arnold projection head against a plain
   MLP in a contrastive setup.
