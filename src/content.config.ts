@@ -11,6 +11,10 @@ const projects = defineCollection({
       description: z.string(),
       cover: image().optional(),
       repo: z.string().url().optional(),
+      // Shown as a facts strip under the lead; all optional.
+      role: z.string().optional(),
+      stack: z.array(z.string()).optional(),
+      status: z.string().optional(),
       order: z.number().default(100),
     }),
 });

@@ -10,6 +10,12 @@ export async function getStaticPaths() {
 
 const { project } = Astro.props;
 const { Content } = await render(project);
+const { role, stack, status, repo, cover } = project.data;
+const facts = [
+  role && { label: "Role", value: role },
+  stack && { label: "Built with", value: stack.join(" · ") },
+  status && { label: "Code", value: status },
+].filter(Boolean);
 ---
 
 <Base title={project.data.title} description={project.data.description}>
@@ -17,8 +23,23 @@ const { Content } = await render(project);
     <p class="eyebrow"><a href="/projects/">← Projects</a></p>
     <h1>{project.data.title}</h1>
     <p class="lead">{project.data.description}</p>
-    {project.data.repo && <p><a href={project.data.repo}>Source on GitHub</a></p>}
-    {project.data.cover && <Image class="hero" src={project.data.cover} alt="" width={1280} loading="eager" />}
+    {cover && <Image class="hero" src={cover} alt="" width={1280} loading="eager" />}
+    {facts.length > 0 && (
+      <dl class="facts">
+        {facts.map((f) => (
+          <div>
+            <dt>{f.label}</dt>
+            <dd>{f.value}</dd>
+          </div>
+        ))}
+        {repo && (
+          <div>
+            <dt>Source</dt>
+            <dd><a href={repo}>GitHub</a></dd>
+          </div>
+        )}
+      </dl>
+    )}
     <Content />
   </article>
 </Base>

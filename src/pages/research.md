@@ -13,18 +13,26 @@ Average accuracy hides this; worst-group accuracy does not.
 
 *M.Sc. thesis, in progress, at RPTU Kaiserslautern-Landau.*
 
+> Self-supervised pretraining inherits the spurious associations in its own
+> unlabeled images. CoSpRo asks a frozen vision-language teacher which of them to
+> break — using no target or group labels at any point before evaluation.
+
 Self-supervised pretraining inherits the spurious object–context associations
 present in its unlabeled images, and augmentation alone does not say which
 context changes should preserve object identity. CoSpRo asks a frozen
-vision-language teacher instead, and uses **no target or group labels** while
+vision-language teacher instead, and uses no target or group labels while
 building the graph or training the encoder.
 
-**How it works.** CLIP embeddings are decomposed into sparse, named concept
+### How it works
+
+CLIP embeddings are decomposed into sparse, named concept
 coordinates with SpLiCE, so a direction in the representation has a word attached
 to it. Related concepts are merged into subspaces, and for each subspace we ask a
 counterfactual question: *which image pairs become more similar once this concept
 is projected out?* Such a pair is a candidate relation — the concept was part of
 what separated the two images.
+
+### Not believing the candidates too easily
 
 Most of the method is about not believing those candidates too easily. A relation
 is kept only if the removed concept is expressed differently in the two images,
@@ -36,8 +44,10 @@ weighted graph that guides batch composition and supplies soft relational target
 next to an ordinary SimCLR objective. At inference the teacher, the graph and the
 heads are thrown away; only the student encoder remains.
 
-**Results so far** (Waterbirds, ResNet-18, 500 epochs, four seeds, linear probe
-on 224 group-balanced examples; held-out test, mean ± sd in %):
+### Results so far
+
+Waterbirds, ResNet-18, 500 epochs, four seeds, linear probe
+on 224 group-balanced examples; held-out test, mean ± sd in %:
 
 | Method | Avg. | Worst-group |
 |---|---|---|
@@ -53,7 +63,9 @@ gain comes from the relational objective rather than from graph-aware batching
 alone, and a control that uses ordinary semantic neighbours instead of projected
 ones is weaker on average — but heterogeneously so across seeds.
 
-**What it does not show.** A post-hoc audit of the graph finds real
+### What it does not show
+
+A post-hoc audit of the graph finds real
 cross-background relations *and* wrong-target edges, so projection clearly does
 not simply delete the spurious signal: a linear probe still reads the background
 off the learned features at above 90% accuracy. The study is one dataset, one

@@ -235,19 +235,86 @@ p { margin: 0 0 1.05em; }
 /* ---------- Long-form content ---------- */
 .prose { max-width: var(--measure); }
 .prose > h2:first-of-type { margin-top: 1.6em; }
-.prose ul, .prose ol { padding-left: 1.2em; }
-.prose li { margin-bottom: 0.4em; }
+.prose .btn { margin: 0.4em 0 0.6em; }
+
+/* A section heading opens a new block of thought, so it gets air above it and a
+   hairline to separate it from what came before (HIG: Layout › Group related
+   items). */
+.prose h2 {
+  margin-top: 2.6em;
+  padding-top: 1.5em;
+  border-top: 1px solid var(--separator);
+  font-size: 1.5rem;
+}
+.prose h2:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+
+/* Subheadings carry the structure inside a section: one short line each, with a
+   small accent mark so the eye can find them while scanning. */
+.prose h3 {
+  position: relative;
+  margin: 2.2em 0 0.45em;
+  font-size: 1.1875rem;
+  letter-spacing: -0.015em;
+}
+.prose h3::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 0.28em;
+  width: 4px;
+  height: 0.95em;
+  border-radius: 2px;
+  background: var(--accent);
+}
+@media (max-width: 760px) {
+  .prose h3::before { left: -12px; width: 3px; }
+}
+.prose h3 + p { margin-top: 0; }
+
+.prose ul, .prose ol { padding-left: 1.3em; margin: 0 0 1.05em; }
+.prose li { margin-bottom: 0.35em; padding-left: 0.2em; }
+.prose li::marker { color: var(--label-tertiary); font-variant-numeric: tabular-nums; }
 .prose strong { font-weight: 600; }
 .prose em { font-style: italic; }
 /* A whole paragraph in italics is an aside, so it recedes; inline emphasis does not. */
 .prose p > em:only-child { color: var(--label-secondary); }
 .prose hr { border: 0; border-top: 1px solid var(--separator); margin: 2.4em 0; }
+
+/* A blockquote is the one line to remember from a section: set on the elevated
+   surface so it reads as a distinct object rather than louder body text. */
 .prose blockquote {
-  margin: 1.4em 0;
-  padding-left: 1.1em;
-  border-left: 3px solid var(--separator);
-  color: var(--label-secondary);
+  margin: 1.8em 0;
+  padding: 18px 22px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--separator);
+  border-left: 3px solid var(--accent);
+  border-radius: 12px;
+  color: var(--label);
+  font-size: 1.0625rem;
+  box-shadow: var(--shadow);
 }
+.prose blockquote p:last-child { margin-bottom: 0; }
+
+/* Facts about a project: a quiet strip, not a table. */
+.facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 18px 28px;
+  margin: 1.8em 0 2.4em;
+  padding: 18px 0;
+  border-top: 1px solid var(--separator);
+  border-bottom: 1px solid var(--separator);
+}
+.facts dt {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--label-tertiary);
+  margin-bottom: 3px;
+}
+.facts dd { margin: 0; font-size: 0.9375rem; }
+
 .prose table {
   display: block;
   overflow-x: auto;
@@ -261,6 +328,8 @@ p { margin: 0 0 1.05em; }
 .prose thead th { color: var(--label-secondary); font-weight: 600; }
 .prose th:not(:first-child), .prose td:not(:first-child) { text-align: right; }
 .prose tbody tr:last-child td { border-bottom: 0; }
+.prose tbody tr:last-child td strong { font-weight: 600; }
+
 .prose .hero {
   display: block;
   width: 100%;
