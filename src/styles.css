@@ -85,3 +85,8 @@ h3 { font-size: 1.05rem; margin: 1.4em 0 .2em; }
   padding-block: 22px 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: .92rem;
 }
 .footer span { margin-left: auto; }
+
+.prose table { display: block; overflow-x: auto; border-collapse: collapse; max-width: 100%; margin: 18px 0; font-size: .95rem; }
+.prose th, .prose td { border-bottom: 1px solid var(--line); padding: 6px 10px; text-align: left; }
+.prose td:not(:first-child), .prose th:not(:first-child) { text-align: right; font-variant-numeric: tabular-nums; }
+.prose em { color: var(--muted); font-style: italic; }

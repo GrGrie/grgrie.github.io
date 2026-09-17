@@ -6,6 +6,10 @@ import photo from "../assets/profile_photo.jpg";
 // Newest first. Add a line here to post an update on the front page.
 const news = [
   {
+    date: "2026-07-22",
+    text: "Writing up CoSpRo, my M.Sc. thesis on concept-guided relational pretraining for spurious-correlation robustness. First four-seed Waterbirds results are in.",
+  },
+  {
     date: "2025-06-01",
     text: "Started as a Research Assistant (HiWi) in the Machine Learning group at RPTU Kaiserslautern-Landau.",
   },
@@ -31,7 +35,13 @@ const news = [
         and ML systems experience, from dataset curation and augmentation to building scalable, reliable training and
         deployment workflows.
       </p>
-      <p><a href="/cv/">CV</a> · <a href="/GrigoryGrechkin-CV.pdf">CV (PDF)</a> · <a href="/projects/">Projects</a></p>
+      <p>
+        My thesis, <a href="/research/">CoSpRo</a>, uses sparse language-aligned concepts to discover image relations for
+        label-free pretraining that holds up when object and context come apart. Outside research I run a
+        <a href="/projects/home-lab/">home lab</a> and a <a href="/projects/ai-assistant/">self-hosted assistant</a> over my
+        own documents.
+      </p>
+      <p><a href="/cv/">CV</a> · <a href="/GrigoryGrechkin-CV.pdf">CV (PDF)</a> · <a href="/research/">Research</a> · <a href="/projects/">Projects</a></p>
     </div>
     <Image class="photo" src={photo} alt="Grigory Grechkin" width={440} loading="eager" />
   </section>

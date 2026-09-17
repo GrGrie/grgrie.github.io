@@ -16,6 +16,7 @@ npm run build    # static site in dist/
 | Name, menu, footer links, "Sign in" address | `src/site.ts` |
 | Front page text and news | `src/pages/index.astro` |
 | CV | `src/pages/cv.md` (PDF: `public/GrigoryGrechkin-CV.pdf`) |
+| Research | `src/pages/research.md` |
 | Projects | one `.md` per project in `src/content/projects/`, images in `src/assets/projects/` |
 | Look | `src/styles.css` |
 
