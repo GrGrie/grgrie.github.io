@@ -1,0 +1,50 @@
+---
+import { Image } from "astro:assets";
+import Base from "../layouts/Base.astro";
+import photo from "../assets/profile_photo.jpg";
+
+// Newest first. Add a line here to post an update on the front page.
+const news = [
+  {
+    date: "2025-06-01",
+    text: "Started as a Research Assistant (HiWi) in the Machine Learning group at RPTU Kaiserslautern-Landau.",
+  },
+];
+---
+
+<Base>
+  <section class="about">
+    <div>
+      <h1>Grigory Grechkin</h1>
+      <p class="muted">
+        Research Assistant in Machine Learning, ML Engineer, M.Sc. student at RPTU Kaiserslautern-Landau
+      </p>
+      <p>
+        I'm an M.Sc. student at RPTU Kaiserslautern-Landau and a research assistant under the supervision of
+        <a href="https://ml.cs.rptu.de/people/naghmeh-ghanooni.php">Naghmeh Ghanooni</a>. My work focuses on methods
+        that improve the robustness of computer vision models, covering synthetic data generation, data selection,
+        feature-space analysis and mitigating <strong>spurious correlations</strong>.
+      </p>
+      <p>
+        I train and evaluate large-scale self-supervised and contrastive models, integrate diverse datasets into custom
+        pipelines, and design reproducible multi-run experiments. Beyond research, I bring solid software engineering
+        and ML systems experience, from dataset curation and augmentation to building scalable, reliable training and
+        deployment workflows.
+      </p>
+      <p><a href="/cv/">CV</a> · <a href="/GrigoryGrechkin-CV.pdf">CV (PDF)</a> · <a href="/projects/">Projects</a></p>
+    </div>
+    <Image class="photo" src={photo} alt="Grigory Grechkin" width={440} loading="eager" />
+  </section>
+
+  <h2>News</h2>
+  <ul class="news">
+    {news.map((n) => (
+      <li>
+        <time datetime={n.date}>
+          {new Date(n.date).toLocaleDateString("en-GB", { month: "short", year: "numeric" })}
+        </time>
+        <span>{n.text}</span>
+      </li>
+    ))}
+  </ul>
+</Base>

@@ -1,0 +1,14 @@
+---
+// Layout for plain .md pages in src/pages/: put
+//   layout: ../layouts/Markdown.astro
+// in the front matter and the file becomes a page at its path.
+import Base from "./Base.astro";
+const { frontmatter } = Astro.props;
+---
+
+<Base title={frontmatter.title} description={frontmatter.description}>
+  <article class="prose">
+    {frontmatter.title && <h1>{frontmatter.title}</h1>}
+    <slot />
+  </article>
+</Base>

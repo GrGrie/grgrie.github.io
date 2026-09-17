@@ -1,0 +1,45 @@
+---
+import { site } from "../site";
+import "../styles.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+const { title, description = site.description } = Astro.props;
+const pageTitle = title ? `${title} · ${site.name}` : site.name;
+const path = Astro.url.pathname;
+const isActive = (href: string) => (href === "/" ? path === "/" : path.startsWith(href));
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={new URL(path, Astro.site)} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+  </head>
+  <body>
+    <header class="wrap header">
+      <a class="brand" href="/">{site.name}</a>
+      <nav>
+        {site.nav.map((item) => (
+          <a href={item.href} aria-current={isActive(item.href) ? "page" : undefined}>{item.label}</a>
+        ))}
+        <a class="signin" href={site.signInUrl} rel="nofollow">Sign in</a>
+      </nav>
+    </header>
+    <main class="wrap">
+      <slot />
+    </main>
+    <footer class="wrap footer">
+      {site.links.map((l) => <a href={l.href}>{l.label}</a>)}
+      <span>© {new Date().getFullYear()} {site.name}</span>
+    </footer>
+  </body>
+</html>
